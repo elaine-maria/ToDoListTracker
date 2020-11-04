@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xmlns.jcp.org/xml/ns/javaee xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+  <display-name>To Do List</display-name>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>controllers.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ToDoListServlet</servlet-name>
+    <servlet-class>controllers.ToDoListServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>controllers.SignupServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controllers.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ToDoListServlet</servlet-name>
+    <url-pattern>/todolist</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
